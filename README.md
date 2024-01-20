@@ -39,7 +39,4 @@ This project is licensed under the MIT License.
 
 [Demo Link] - [(if applicable)](https://drive.google.com/drive/folders/1TugaKLWM7u3vflC5cxroJByfY6aqzwlq?usp=drive_link)
 
-[Documentation Link] - (if applicable)
-
-
 Start managing attendance effortlessly with our MERN stack Attendance Management System!
