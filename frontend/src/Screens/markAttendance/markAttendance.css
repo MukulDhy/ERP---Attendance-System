@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+.sideNav{
+    color: white;
+    background:#1046ceea;
+    position: fixed;
+    /* position: -webkit-sticky; */
+    height: 100vh;
+    z-index: 5;
+
+    min-width: 15%;
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+.logo {
+    flex: 1;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+}
+span{
+    position: absolute;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bolder;
+    right: 0px;
+    bottom: 100%;
+    border-radius: 10px;
+}
+.logo span:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;    
+}
+li:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+li:hover a, li:hover i{
+    color: rgba(255, 255, 255, 1);
+}
+li a{
+    flex: 1;
+    margin-left:10px ;
+    color: #a7bbeb;
+    text-decoration: none;
+    text-transform:capitalize;
+    transition: all 0.2s ease;
+}
+li i{
+    transition: all 0.2s ease;
+    color: #a7bbeb;
+}
+.nav-list{
+    position: relative;
+    margin: 10px 0;
+}
+.nav-list::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    display: block;
+    /* text-align: center; */
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    height: 1px;
+    border-radius: 15px;
+}
+.nav-login{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 460px;
+    padding: 10px;
+    bottom: 10px;
+    border-radius: 15px;
+}
+.nav-login:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+.nav-login:hover p{
+    
+    color: white;
+} 
+.nav-login img{
+    width: 35px;
+    border-radius: 50%;
+}
+.user-info{
+    flex: 1;
+    margin-left:10px ;
+}
+.light{
+    color: #a7bbeb;
+    transition: all 0.2s ease ;
+}
+button{
+    border: none;
+}

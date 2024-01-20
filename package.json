@@ -1,0 +1,41 @@
+{
+  "proxy": "http://localhost:3000/",
+  "name": "dce-student-portal",
+  "version": "1.0.0",
+  "description": "mern app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installBackend": "npm install express bcryptjs body-parser cloudinary cookie-parser dotenv express-fileupload jsonwebtoken mongoose nodemailer stripe validator colors express-async-handler nodemon mongodb concurrently",
+    "installClient": "npm install --prefix frontend",
+    "install": "concurrently \"npm run installBackend\" \"npm run installClient\" ",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server \" \"npm run client\" ",
+    "ngrok": "ngrok http http://localhost:3000 --host-header=\"localhost:300\"",
+    "liveProduction": "concurrently \"npm run server \" \"npm run client\" \"npm run ngrok\" ",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d"
+  },
+  "author": "Mukul Dahiya",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.33.0",
+    "colors": "^1.4.0",
+    "concurrently": "^7.6.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.0.0",
+    "mongoose": "^6.9.0",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "stripe": "^11.8.0",
+    "validator": "^13.7.0"
+  }
+}

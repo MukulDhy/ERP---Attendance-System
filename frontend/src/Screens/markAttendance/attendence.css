@@ -1,0 +1,230 @@
+.attendence{
+    max-width: 85%;
+    position: relative;
+    /* background-color: aqua; */
+    height: 100vh;
+    left: 15%;
+    display: flex;
+    align-items: stretch;
+}
+.section-1{
+    padding: 25px;
+    /* background-color: red; */
+    flex:1;
+}
+.section-2{
+    border: 1px solid rgba(207, 201, 201, 0.67);
+    padding: 25px;
+    /* background-color: purple; */
+    min-width: 250px;
+}
+.search{
+    position: relative;
+
+}
+input[type = 'search']{
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: rgba(207, 201, 201, 0.67);
+}
+button{
+    border:none;
+    position: relative;
+    background: none;
+}
+button i{
+    position: absolute;
+    font-size: 20px;
+    /* top: 0%; */
+    right: 15px;
+    bottom: -5px;
+    /* right: 25px; */
+}
+.getFields input[type = 'date']{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: rgba(207, 201, 201, 0.67);
+    /* margin-top: 20px; */
+    margin-bottom: 5px;
+}
+label{
+    margin: 10px 0;
+    display: block;
+    font-weight: bold;
+}
+span{
+    display: block;
+    color: black;
+}
+ 
+.light-text{
+    color: lightslategray;
+}
+.checkbox-classes{
+    margin: 30px 0;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* font-size: 22px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+    .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+    .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+    .container .checkmark:after {
+    left: 7.2px;
+    top: 3.6px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .submit{
+    margin: 30px 0;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-weight: 80;
+    background: #1046cecd;
+  }
+  .submit:hover{
+    background: #1046ce;
+  }
+select{
+  margin: 20px auto;
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background: rgba(207, 201, 201, 0.67);
+}
+.attendance-nav{
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* align-items: center; */
+}
+.attendence-heading{
+  flex: 1;
+  /* font-size: 10px; */
+  text-transform: uppercase;
+}
+.excel-file{
+  display: flex;
+  justify-content: center;
+  padding: 0px 15px;
+}
+.excel-file button{
+    margin: 30px 0;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-weight: 80;
+    background: #1046cecd;
+  }
+  .excel-file button:hover{
+    background: #1046ce;
+    
+  }
+  .hrBar-attendence-nav{
+    border: 0.5px solid rgba(207, 201, 201, 0.67) ;
+    /* background: rgb(255, 0, 0);     */
+}
+.excel-file input[type="file"]{
+  margin: 10px 0;
+  border: none;
+  text-decoration: none;
+  place-content: none;
+}
+.form-upload-excelFile{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form-upload-heading{
+  flex: 1;
+}
+.student-attendance-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  background: rgba(169, 165, 165, 0.532) ;
+  margin: 10px 0;
+  border-radius:15px ;
+}
+.stundent-attendance{
+  flex: 1;
+  text-align: center ;
+}
+.student-attendance-container{
+  margin: 20px 0;
+}
+
+.stundent-today-status{
+  text-align: center  ;
+  display: flex;
+  flex: 1;
+  column-gap: 20px;
+}
